@@ -8,7 +8,7 @@ description: > # Meta description of Homepage
 #baseurl: ""
 #url: "https://aelv.se"
 #url: "https://grimlight.se"
-url: "https://glminiatyrdesign.github.io"
+url: "https://glminiatyrdesign.github.io/"
 baseurl: "gl/"
 
 # SEO PLUGIN
