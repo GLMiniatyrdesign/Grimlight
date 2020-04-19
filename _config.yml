@@ -5,10 +5,11 @@ description: > # Meta description of Homepage
   Miniature lighting for all shapes
 
 #baseurl: "/hka/gamma" # the subpath of your site, e.g. /blog
-baseurl: ""
+#baseurl: ""
 #url: "https://aelv.se"
 #url: "https://grimlight.se"
 url: "http://grimlight.github.io"
+baseurl: "grimlight.github.io/"
 
 # SEO PLUGIN
 social:
