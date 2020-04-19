@@ -1,0 +1,14 @@
+<div class="gallery">
+  <div class="col-md-8 col-sm-12 img-row" >
+    {% for slides in include.carouselSlides %}
+    <div class="thumbnail">
+      <a href="{{ site.url }}{{ site.baseurl }}/assets{{ slides.image }}">
+	<img class="img-responsive" src="{{ site.url }}{{ site.baseurl }}/assets{{ slides.image }}">
+      </a> 
+      <div class="desc">{{ slides.caption }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<br />
+<br />

@@ -1,0 +1,88 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% if site.google_tag_manager %}
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+    {% endif %}
+
+    {% include header.html %}
+
+    <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.hero_img }}">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ site.title | escape }}</h1>
+        <p class="hero__meta">{{ site.tagline }}</p>
+      </div>
+    </div>
+
+<!--    
+    <main class="site__content">
+      <section class="blog">
+        <div class="container">
+          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+
+            {% for post in site.posts %}
+              {% include card.html %}
+            {% endfor %}
+
+            <!-- {% include pagination.html %} --><!--
+          </div>
+        </div>
+      </section>
+    </main>
+    -->
+	    <main class="site__content">
+	      <div class="container">
+		<div class="page-content">
+
+		  {{ content }}
+		  
+		</div>
+	      </div>
+      <div class="container">
+        <div class="page-content">
+	  
+	  <div class="gallery">
+	    <div class="col-md-8 col-sm-12 img-row" >
+	      <div class="thumbnail">
+		<div class="desc">As seen on:</div>
+		<a href="https://www.kickstarter.com/projects/296502870/grimlight-tiny-magnet-controlled-lights-for-miniat/">
+		  <img class="img-responsive" src="{{ site.url }}{{ site.baseurl }}/assets/img/icons/ks.png">
+		</a>
+	      </div>
+
+	      <div class="thumbnail">
+		<div class="desc">Available at:</div>
+		<a href="https://www.sfbok.se/">
+		  <img class="img-responsive" src="{{ site.url }}{{ site.baseurl }}/assets/img/icons/sfbokIcon.png">
+		</a>
+	      </div>
+
+	      <div class="thumbnail">
+		<div class="desc">Available at:</div>
+		<a href="https://www.gamemaniacs.se/">
+		  <img class="img-responsive" src="{{ site.url }}{{ site.baseurl }}/assets/img/icons/gm.png">
+		</a>
+	      </div>	      	      
+	    </div>
+	  </div>
+
+        </div>
+      </div>	    
+	  
+    {% include footer.html %}
+
+  </body>
+
+</html>

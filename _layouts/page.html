@@ -1,0 +1,67 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% if site.google_tag_manager %}
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+    {% endif %}
+
+    {% include header.html %}
+
+    <div class="hero--small">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ page.title }}</h1>
+      </div>
+    </div>
+    <main class="site__content">
+
+      <div class="container">
+        <div class="page-content">
+
+          {{ content }}
+
+        </div>
+      </div>
+
+      {% if page.safsdfv %}
+      {% if page.carousel %}
+      <div class="flexslider">
+	<ul class="slides">
+	  {% for slides in page.carousel %}
+	  <li>
+            <img src="{{ site.url }}{{ site.baseurl }}/assets{{ slides.image }}">
+	    <p class="flex-caption">{{ slides.caption }}</p>
+	  </li>
+	  {% endfor %}
+	</ul>
+      </div>
+      {% endif %}
+      {% endif %}
+    </main>
+
+    {% include footer.html %}
+    <!-- Flexslider Scripts
+	 =================================================-->
+    {% if page.carousel %}
+    <!-- Google CDN Hosted jQuery  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!-- Flexslider Library  -->
+    <script src="{{ site.baseurl }}/assets/js/flexslider/jquery.flexslider-min.js"></script>
+    <!-- Initialisation Code  -->
+    <script src="{{ site.baseurl }}/assets/js/app.js"></script>
+    {% endif %}
+
+  </body>
+
+</html>

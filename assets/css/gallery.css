@@ -1,0 +1,32 @@
+.img-row{
+  justify-content:space-between;
+  display:flex; flex-wrap:wrap
+  }
+.img-responsive{
+  flex-grow:1; width:auto; max-width:260px; height:auto !important
+  }
+.desc {
+    padding: 15px;
+    text-align: center;
+    max-width: 260px;
+}
+.gallery{
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+}
+.thumbnail {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 260px;
+
+}
+.gallery:hover {
+    border: 1px solid #777;
+}
+.gallery img {
+    justify-content:space-between;    
+    width: 100%;
+    height: auto;
+}

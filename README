@@ -1,0 +1,3 @@
+bundle exec jekyll serve --watch
+jekyll build
+scp _site content

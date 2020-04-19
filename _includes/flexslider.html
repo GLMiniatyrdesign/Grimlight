@@ -1,0 +1,12 @@
+<div class="flexslider">
+  <ul class="slides">
+    {% for slides in include.carouselSlides %}
+    <li>
+      <img src="{{ site.url }}{{ site.baseurl }}/assets{{ slides.image }}">
+      <p class="flex-caption">{{ slides.caption }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<br />
+<br />
