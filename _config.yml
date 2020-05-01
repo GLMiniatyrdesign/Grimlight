@@ -7,7 +7,7 @@ description: > # Meta description of Homepage
 #baseurl: "/hka/gamma" # the subpath of your site, e.g. /blog
 #baseurl: ""
 #url: "https://aelv.se"
-url: "https://grimlight.se"
+url: "http://grimlight.se"
 #url: "https://glminiatyrdesign.github.io/"
 #baseurl: "/gl/"
 
